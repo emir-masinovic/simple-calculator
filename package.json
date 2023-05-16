@@ -1,0 +1,7 @@
+{
+  "name": "Simple Calculator",
+  "version": "1.0.0",
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
+}

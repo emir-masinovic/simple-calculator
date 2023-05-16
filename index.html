@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: steelblue;
+      }
+      .calculator-container {
+        background-image: url("images/gray1.png");
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+          rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+          rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+          rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+          rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+          rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        width: 200px;
+        /*scale: 1.5;*/
+        margin: 2rem auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .casio-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .casio-empty {
+        background-image: url("/images/black.jpg");
+        opacity: 0.8;
+        width: 30%;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: inset rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+          rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
+
+        border-radius: 4px;
+      }
+
+      .display {
+        background-color: #a2bbcf;
+        word-break: break-all;
+        border-radius: 4px;
+        padding: 10px;
+        text-align: end;
+        box-shadow: inset rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+          rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
+      }
+
+      .buttons-container {
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      .buttons-container button {
+        background-color: rgba(0, 0, 0, 0.7);
+        background-image: url("/images/black.jpg");
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="casio-container">
+        <div class="casio">CASIO</div>
+        <div class="casio-empty"></div>
+      </div>
+      <div class="display">0</div>
+      <div class="buttons-container"></div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <!--    <div id="target"></div>-->
+    <!--    <script src="app.js"></script>-->
+  </body>
+</html>
